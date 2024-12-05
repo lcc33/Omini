@@ -1,0 +1,91 @@
+body{
+    
+  font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: url(pexels-pixabay-268533.jpg);
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+.search-input{
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    font-size: 1.6rem;
+    display: block;
+    border: none;
+    
+}
+img{
+    width: 248px;
+    justify-self: center;
+    
+}
+.svg{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    margin-top: 15%;
+    margin-bottom: 20%;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+svg path{
+    fill: transparent;
+    stroke: #fff;
+    
+    stroke-width: 0.1;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: textAnimation 3s ease-in-out 1 forwards;
+}
+
+.anime-section{
+    margin-top: 20px;
+    background-image: radial-gradient(rgba(15, 0, 0, 0.911),rgba(52, 3, 59, 0.575),rgba(9, 9, 82, 0.712),black);
+    width: 100%;
+}
+
+.img{
+    padding-bottom:  30px;
+    margin: 30px 0;
+    width: 40%;
+    border-radius: 20px;
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    color: rgba(195, 195, 255, 0.89);
+}
